@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+   <!-- This is the bootstrap CDN -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+   
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+<body>
+    
+<!-- The header should have a fixed position at the top of the page along with a navigation bar -->
+<header class="headercontainer"> 
+  <div class="namecontainer">
+     <h1>Leticia Romero</h1> 
+     </div>
+   <!--This nav bar will link to the other three html files -->
+   <nav class="topnavigation">
+     <ul class="ulcontainer">
+       <li class="navigation_about ullinks" > 
+           <a href="index.html">About</a> 
+       </li>
+
+       <li class="navigation_portfolio ullinks">
+         <a href="Portfolio.html">Portfolio</a>     
+       </li>
+
+       <li class="navigation_contact ullinks">
+         <a href="contacts.html">Contact</a>  
+       </li>
+
+     </ul>
+   </nav>        
+       
+  </header>  
+
+<div class="contactcontainer">
+
+<!-- this is the contact text. It will need to have a line below it -->
+    <h2 class="subheading">Contact</h2>
+<!-- A line will have to be placed here -->
+
+<!-- took this code from w3 schools. Not sure how to make it work -->
+    <form action="/action_page.php" class="formcontainer">
+      <label for="name">Name</label>
+      <br>
+      <input type="text" class="formpart" id="name" name="name" placeholder="Your name..">
+      <br>
+      <label for="email">Email</label>
+      <br>
+      <input type="text" class="formpart" id="email" name="email" placeholder="Your email.">
+  <br>
+      <label for="message">Message</label>
+  <br>
+      <textarea id="message" class="formpart" name="message" placeholder="Write something.." style="height:200px"></textarea>
+  <br>
+  <!-- Should I add a <button> tag here? -->
+      <input type="submit" value="Submit">
+    </form>
+
+</div>
+ 
+
+<!-- this should be sticky -->
+<footer class="center">
+    <p>copyright &copy; </p> 
+</footer>
+
+</body>
+</html>

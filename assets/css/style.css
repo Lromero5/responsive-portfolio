@@ -1,0 +1,107 @@
+/* This will be my css file for all three html files */
+
+/* I want the header to remain at the top of the page, should I add a fixed position to it?  */
+
+body {
+    background-image: url(assets/images/ripples.png);
+    border-color: #ddd;
+}
+
+.headercontainer {
+    background-color: white; 
+    /* I can't get my bottom border to show */
+    border-bottom: 2px, solid, grey;
+}
+
+.topnavigation {
+    display: inline;
+}
+
+h1 {
+    width: 220px;
+    padding: 10px;
+    border: 5px ;
+    margin-left: 40px;
+    background-color: #4aaaa5;  
+    color: white;
+    display: inline-block;  
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ulcontainer {
+    display: inline-block;
+    float: right;
+    margin-top: -25px;
+}
+
+h2 {
+    color: #4aaaa5;
+    border-bottom: 1px solid grey;
+    margin: 5px;
+    height: 50px;
+}
+
+/* this is the container in the index.html file */
+.maincontainer {
+    background-color: white;
+    margin-top: 30px:
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 365px;
+    width: 960px;
+    margin: auto;
+    
+}
+/* my image gets cut off when I add a fixed position */
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    float: left;
+  }
+
+p {
+    color: #777777;
+    line-height: 2;
+}
+  /* this is the first paragraph in the about me section. */
+/* .inline {
+    display: inline;
+} */
+
+  footer {
+      background-color: #666666;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+      bottom: 0px;
+  }
+
+  .ullinks {
+      display: inline-block;
+  }
+
+  .portfoliocontainer {
+      background-color: white;
+      height: 450px;
+      width: 960px;
+      margin-left: 40px;
+      margin-right: 40px;
+      margin: auto;
+  }
+
+  .contactcontainer {
+    background-color: white;
+    height: 450px;
+    width: 960px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: auto;
+
+}
+
+.formpart {
+    width: 400px;
+}
