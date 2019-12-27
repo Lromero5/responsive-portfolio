@@ -2,10 +2,14 @@
 
 /* I want the header to remain at the top of the page, should I add a fixed position to it?  */
 
-body {
-    background-image: url(assets/images/ripples.png);
-    border-color: #ddd;
-}
+
+body { 
+    background: url(../images/ripples.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 .headercontainer {
     background-color: white; 
@@ -19,14 +23,15 @@ body {
 
 h1 {
     width: 220px;
-    padding: 10px;
+    padding: 20px;
     border: 5px ;
-    margin-left: 40px;
+    margin-left: 20%;
     background-color: #4aaaa5;  
     color: white;
     display: inline-block;  
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: x-large;
 }
 
 .ulcontainer {
@@ -35,21 +40,21 @@ h1 {
     margin-top: -25px;
 }
 
-h2 {
+h3 {
     color: #4aaaa5;
     border-bottom: 1px solid grey;
     margin: 5px;
     height: 50px;
+    
 }
 
 /* this is the container in the index.html file */
 .maincontainer {
     background-color: white;
-    margin-top: 30px:
+    margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
-    height: 365px;
-    width: 960px;
+    width: 75%;
     margin: auto;
     
 }
@@ -104,4 +109,16 @@ p {
 
 .formpart {
     width: 400px;
+}
+
+@media(max-width: 575px) {
+    h1 {
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+        display: block;
+    }
+    .namecontainer {
+        text-align: center;
+    }
 }
