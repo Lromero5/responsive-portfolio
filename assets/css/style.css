@@ -2,7 +2,6 @@
 
 /* I want the header to remain at the top of the page, should I add a fixed position to it?  */
 
-
 body { 
     background: url(../images/ripples.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -13,12 +12,7 @@ body {
 
 .headercontainer {
     background-color: white; 
-    /* I can't get my bottom border to show */
-    border-bottom: 2px, solid, grey;
-}
-
-.topnavigation {
-    display: inline;
+    border-bottom: 4px, solid, grey;
 }
 
 h1 {
@@ -34,11 +28,22 @@ h1 {
     font-size: x-large;
 }
 
-.ulcontainer {
+.ullinks {
+    display: inline-block;
+    padding: 5px;
+}
+
+.topnavigation {
+    padding: 10px;
+}
+
+/* not sure what this is doing */
+
+/* .ulcontainer {
     display: inline-block;
     float: right;
     margin-top: -25px;
-}
+} */
 
 h3 {
     color: #4aaaa5;
@@ -58,11 +63,31 @@ h3 {
     margin: auto;
     
 }
-/* my image gets cut off when I add a fixed position */
+
+/* This is the container in the portfolio.html file */
+.portfoliocontainer {
+    background-color: white;
+    height: 450px;
+    width: 75%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: auto;
+}
+
+/* This is the container in the contact.html file */
+.contactcontainer {
+    background-color: white;
+    height: 450px;
+    width: 75%;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin: auto;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    padding: 10px;
     width: 150px;
     float: left;
   }
@@ -84,31 +109,9 @@ p {
       bottom: 0px;
   }
 
-  .ullinks {
-      display: inline-block;
-  }
-
-  .portfoliocontainer {
-      background-color: white;
-      height: 450px;
-      width: 960px;
-      margin-left: 40px;
-      margin-right: 40px;
-      margin: auto;
-  }
-
-  .contactcontainer {
-    background-color: white;
-    height: 450px;
-    width: 960px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin: auto;
-
-}
 
 .formpart {
-    width: 400px;
+    width: 75%;
 }
 
 @media(max-width: 575px) {
@@ -121,4 +124,5 @@ p {
     .namecontainer {
         text-align: center;
     }
+
 }
