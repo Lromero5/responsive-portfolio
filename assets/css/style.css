@@ -13,6 +13,9 @@ body {
 .headercontainer {
     background-color: white; 
     border-bottom: 4px, solid, grey;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 h1 {
@@ -50,18 +53,17 @@ h3 {
     border-bottom: 1px solid grey;
     margin: 5px;
     height: 50px;
-    
 }
 
 /* this is the container in the index.html file */
 .maincontainer {
     background-color: white;
-    margin-top: 30px;
     margin-left: 40px;
     margin-right: 40px;
     width: 75%;
     margin: auto;
-    
+    margin-top: 100px;
+    padding: 15px;
 }
 
 /* This is the container in the portfolio.html file */
@@ -72,6 +74,7 @@ h3 {
     margin-left: 40px;
     margin-right: 40px;
     margin: auto;
+    margin-top: 100px;
 }
 
 /* This is the container in the contact.html file */
@@ -82,6 +85,7 @@ h3 {
     margin-left: 40px;
     margin-right: 40px;
     margin: auto;
+    margin-top: 100px;
 }
 
 img {
@@ -123,6 +127,25 @@ p {
     }
     .namecontainer {
         text-align: center;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    p {
+        clear: both;
+    }
+
+    img {
+        width: inherit;
+    }
+
+    ul {
+        text-align: center;
+        padding: 0px;
+    }
+    .headercontainer {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
     }
 
 }
