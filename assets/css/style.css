@@ -15,7 +15,7 @@ body {
     border-bottom: 4px, solid, grey;
     position: fixed;
     top: 0px;
-    width: 100%;
+    width: 102%;
 }
 
 h1 {
@@ -38,6 +38,8 @@ h1 {
 
 .topnavigation {
     padding: 10px;
+    display: inline-block;
+    float: right;
 }
 
 /* not sure what this is doing */
@@ -88,6 +90,11 @@ h3 {
     margin-top: 100px;
 }
 
+.namecontainer {
+    display: inline;
+    float: left;
+}
+
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -100,6 +107,7 @@ p {
     color: #777777;
     line-height: 2;
 }
+
   /* this is the first paragraph in the about me section. */
 /* .inline {
     display: inline;
@@ -118,6 +126,7 @@ p {
     width: 75%;
 }
 
+/* Media queries will take effect once the screen is smaller */
 @media(max-width: 575px) {
     h1 {
         padding: 0px;
@@ -143,6 +152,7 @@ p {
         text-align: center;
         padding: 0px;
     }
+
     .headercontainer {
         margin-left: 0px !important;
         margin-right: 0px !important;
