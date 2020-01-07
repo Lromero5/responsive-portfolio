@@ -1,7 +1,5 @@
 /* This will be my css file for all three html files */
 
-/* I want the header to remain at the top of the page, should I add a fixed position to it?  */
-
 body { 
     background: url(../images/ripples.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -10,20 +8,29 @@ body {
     background-size: cover;
   }
 
+  /*this class belongs to the header container on all pages  */
 .headercontainer {
     background-color: white; 
-    border-bottom: 4px, solid, grey;
+    border-bottom: 2px, solid, #cccccc;
     position: fixed;
     top: 0px;
-    width: 102%;
+    width: 100%;
+    overflow: auto;
+    display: block;
 }
 
+.namecontainer {
+    display: block;
+    float: left;
+}
+
+/* The h1 tag is the one in the header */
 h1 {
     width: 220px;
     padding: 20px;
     border: 5px ;
     margin-left: 20%;
-    background-color: #4aaaa5;  
+    background-color: #4aaaa5; 
     color: white;
     display: inline-block;  
     margin-top: 0px;
@@ -31,25 +38,22 @@ h1 {
     font-size: x-large;
 }
 
+/* navigation links on all pages */
 .ullinks {
     display: inline-block;
     padding: 5px;
 }
 
+/* navigation on all pages */
 .topnavigation {
     padding: 10px;
     display: inline-block;
     float: right;
+    margin-top: 25px;
+    color: #999999;
 }
 
-/* not sure what this is doing */
-
-/* .ulcontainer {
-    display: inline-block;
-    float: right;
-    margin-top: -25px;
-} */
-
+/* the h3 elements are the subheadings in all the pages */
 h3 {
     color: #4aaaa5;
     border-bottom: 1px solid grey;
@@ -60,6 +64,7 @@ h3 {
 /* this is the container in the index.html file */
 .maincontainer {
     background-color: white;
+    height: 450px;
     margin-left: 40px;
     margin-right: 40px;
     width: 75%;
@@ -72,47 +77,43 @@ h3 {
 .portfoliocontainer {
     background-color: white;
     height: 450px;
-    width: 75%;
     margin-left: 40px;
     margin-right: 40px;
+    width: 75%;
     margin: auto;
     margin-top: 100px;
+    padding: 15px;
 }
 
 /* This is the container in the contact.html file */
 .contactcontainer {
     background-color: white;
     height: 450px;
-    width: 75%;
     margin-left: 40px;
     margin-right: 40px;
+    width: 75%;
     margin: auto;
     margin-top: 100px;
+    padding: 15px;
 }
 
-.namecontainer {
-    display: inline;
-    float: left;
-}
-
+/* images are in the about me and portfolio section */
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
     padding: 10px;
     width: 150px;
     float: left;
+    margin-top: 10px;  
+    margin-right: 15px;
   }
 
 p {
     color: #777777;
     line-height: 2;
+    margin-bottom: 20px;
+    display: block;
 }
 
-  /* this is the first paragraph in the about me section. */
-/* .inline {
-    display: inline;
-} */
-
+/* sticky footer on all pages */
   footer {
       background-color: #666666;
       position: fixed;
@@ -126,7 +127,7 @@ p {
     width: 75%;
 }
 
-/* Media queries will take effect once the screen is smaller */
+/* Media queries will take effect once the screen is at 575 */
 @media(max-width: 575px) {
     h1 {
         padding: 0px;
