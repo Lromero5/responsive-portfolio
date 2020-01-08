@@ -140,8 +140,6 @@ p {
     }
     .namecontainer {
         text-align: center;
-        padding-left: 0px !important;
-        padding-right: 0px !important;
     }
 
     p {
@@ -157,9 +155,9 @@ p {
         padding: 0px;
     }
 
-    .headercontainer {
+    /* .headercontainer {
         margin-left: 0px !important;
         margin-right: 0px !important;
-    }
+    } */
 
 }
